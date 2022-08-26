@@ -20,11 +20,20 @@ class _LoginPageState extends State<LoginPage> {
         padding: EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(
-              Icons.person,
-              color: Colors.deepPurple,
-              size: 150,
+            Container(
+              height: 180,
+              width: 180,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.grey.shade200,
+              ),
+              child: Icon(
+                Icons.person,
+                color: Colors.grey.shade500,
+                size: 150,
+              ),
             ),
             TextField(
               onChanged: _loginController.setLogin,
