@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_using_api/views/home_page.dart';
-import 'package:flutter_using_api/views/screen_page.dart';
+
+import 'package:flutter_using_api/views/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const ScreenPage(),
+      home: SplashPage(),
     );
   }
 }
